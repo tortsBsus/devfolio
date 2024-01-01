@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/components/Socials.jsx", "app/components/Projects.jsx", "app/components/Navbar.jsx", "app/components/Hero.jsx", "app/components/About/About.jsx"  ],
   "exclude": [
     "node_modules"
   ]

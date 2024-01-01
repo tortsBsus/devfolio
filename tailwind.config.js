@@ -1,5 +1,24 @@
 module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        vergilia: ['Vergilia', 'sans-serif'],
+      },
+      fontSize: {
+        titles: '8rem',
+        heads1: '5.625rem',
+        heads2: '4rem',
+        heads3: '2.812rem',
+        heads4: '2rem',
+        heads5: '1.438rem',
+        bases: '1rem',
+        captions: '0.688rem',
+        smalls: '0.5rem',
+      }
+    },
+    
+  },
   daisyui: {
     themes: [ {
       peachy: {
@@ -14,7 +33,7 @@ module.exports = {
                 "error": "#C45259",
               },
     },
-    "cupcake", "dark", "cmyk"],
+    ],
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'),require('daisyui')],
 };
