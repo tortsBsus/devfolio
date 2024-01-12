@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./About/Logo";
 import Image from "next/image";
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -18,9 +19,12 @@ function Navbar() {
                         text-neutral 
                         border-primary border-solid border-2 
                         flex justify-around align-middle">
-            <a className="text-bases lg:text-heads5 font-vergilia">Home</a>
-            <a className="text-bases lg:text-heads5 font-vergilia">Projects</a>
-            <a className="text-bases lg:text-heads5 font-vergilia">About</a>
+            <Link href="#hero" className="text-bases lg:text-heads5 font-vergilia">Home</Link>
+            {/* <Link href="#projects" className="text-bases lg:text-heads5 font-vergilia">Projects</Link> */}
+            <Link href="#about" className="text-bases lg:text-heads5 font-vergilia">About</Link>
+            <Link href="#experience" className="text-bases lg:text-heads5 font-vergilia">Experience</Link>
+            {/* <Link href="#achievements" className="text-bases lg:text-heads5 font-vergilia">Achievements</Link> */}
+            
           </div>
         </div>
 
@@ -33,9 +37,9 @@ function Navbar() {
                           bg-secondary text-neutral 
                           border-primary border-solid border-2 
                           flex justify-center align-center">
-            <a className="text-bases lg:text-heads5 font-vergilia">
+            < Link href="#socials" className="text-bases lg:text-heads5 font-vergilia">
               Contact me!
-            </a>
+            </Link>
           </div>
         </div>
       </div>

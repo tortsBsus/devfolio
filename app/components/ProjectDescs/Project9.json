@@ -1,0 +1,8 @@
+{
+    "projectTitle": "Comment Cleanser",
+    "projectDescription": "A web app to clean up your comment sections using just the link of the youtube video.",
+    "projectVideo": "hihihilink",
+    "liveLink": "https://comment-cleanser.vercel.app/",
+    "githubLink": "www.meghanarathanraj.me",
+    "TechStack": ["React","Youtube Data API", "Chakra UI", " TailwindCSS", "Typescript"]
+}

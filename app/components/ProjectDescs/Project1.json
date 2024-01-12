@@ -1,0 +1,8 @@
+{
+    "projectTitle": "Lumos - A Pedestrian Navigation App",
+    "projectDescription": "A cross platform mobile application that generates the safest route between the source and destination based on the street light density of the streets.",
+    "projectVideo": "hihihilink",
+    "liveLink": "www.meghanarathanraj.me",
+    "githubLink": "https://github.com/tortsBsus/Capstone",
+    "TechStack": ["React Native", "Google APIs", "Hyperledger Fabric","HTML",  "CSS", "Typescript"]
+}

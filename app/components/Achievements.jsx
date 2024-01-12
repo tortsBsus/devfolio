@@ -1,19 +1,51 @@
-import React from 'react'
+import React from 'react';
 
-function Achievements() {
+function AchievementCard({ title, description }) {
   return (
-    <div>
-    <h1 className="text-heads3 text-left font-vergilia"> TiH fellowship </h1>
-    <h1 className="text-heads3 text-right font-vergilia"> KSCST grant </h1>
-    <h1 className="text-heads3 text-right font-vergilia"> YESIST 2023 win & presentation at international forum </h1>
-    <h1 className="text-heads3 text-right font-vergilia"> Delhi presentation </h1>
-    <h1 className="text-heads3 text-right font-vergilia"> Amazon Ai conclave</h1>
-    <h1 className="text-heads3 text-right font-vergilia"> Flipkart Ai conclave</h1>
-    <h1 className="text-heads3 text-right font-vergilia"> Buildspace India</h1>
-
-
-  </div>
-  )
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="p-6">
+        <h2 className="text-2xl font-bold mb-2">{title}</h2>
+        <p className="text-gray-700">{description}</p>
+      </div>
+    </div>
+  );
 }
 
-export default Achievements
+function Achievements() {
+  const achievements = [
+    {
+      title: 'TiH fellowship',
+      description: 'Achieved during a fellowship program',
+    },
+    {
+      title: 'KSCST grant',
+      description: 'Received a grant from KSCST organization',
+    },
+    {
+      title: 'YESIST 2023 win & presentation at international forum',
+      description: 'Won in YESIST 2023 and presented project at an international forum',
+    },
+    {
+      title: 'Delhi presentation',
+      description: 'Presented project in Delhi',
+    },
+    {
+      title: 'Patent Holder',
+      description: 'Presented project in Delhi',
+    },
+    // Add more achievements here...
+  ];
+
+  return (
+    <div className="mt-10 px-4 lg:px-16 min-h-screen w-screen">
+      <h1 className="text-4xl font-bold mb-8">Achievements</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {achievements.map((achievement, index) => (
+          <AchievementCard key={index} {...achievement} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Achievements;

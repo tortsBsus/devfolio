@@ -1,0 +1,8 @@
+{
+    "projectTitle": "Comment Cleanser",
+    "projectDescription": "This is a website to separate the spam from comments",
+    "projectVideo": "hihihilink",
+    "liveLink": "www.meghanarathanraj.me",
+    "githubLink": "www.meghanarathanraj.me",
+    "TechStack": ["ReactJS","TailwindCSS","HTML","CSS", "Javascript","Typescript"]
+}
