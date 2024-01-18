@@ -5,44 +5,46 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <>
-      <div className="grid grid-cols-12">
-        <div className=" col-span-8 
-                      lg:col-span-7 lg:col-start-2 
-                      bg-secondary p-1 mx-2
-                      
-                      rounded-3xl">
-          <div className="navbar 
-                        h-full w-full 
-                        rounded-3xl 
-                        bg-secondary 
-                        text-neutral 
-                        border-primary border-solid border-2 
-                        flex justify-around align-middle">
-            <Link href="#hero" className="text-bases lg:text-heads5 font-vergilia">Home</Link>
-            {/* <Link href="#projects" className="text-bases lg:text-heads5 font-vergilia">Projects</Link> */}
-            <Link href="#about" className="text-bases lg:text-heads5 font-vergilia">About</Link>
-            <Link href="#experience" className="text-bases lg:text-heads5 font-vergilia">Experience</Link>
-            {/* <Link href="#achievements" className="text-bases lg:text-heads5 font-vergilia">Achievements</Link> */}
+    // <>
+    //   <div className="border-2 border-solid border-black grid grid-cols-12 mx-6 md:mx-16 lg:mx-20">
+    //     <div className="col-span-8 
+    //                   lg:col-span-7 lg:col-start-2 
+    //                   bg-secondary p-1 mr-2   
+    //                   rounded-3xl">
+    //       <div className="navbar 
+    //                     h-full w-full 
+    //                     rounded-3xl 
+    //                     bg-secondary 
+    //                     text-neutral 
+    //                     border-primary border-solid border-2 
+    //                     flex justify-around align-middle">
+    //         <Link href="#hero" className=" text-cations  lg:text-heads5 font-vergilia">Home</Link>
+    //         {/* <Link href="#projects" className="text-bases lg:text-heads5 font-vergilia">Projects</Link>
+    //         <Link href="#about" className="text-bases lg:text-heads5 font-vergilia">About</Link>
+    //         <Link href="#experience" className="text-bases lg:text-heads5 font-vergilia">Experience</Link>
+    //         <Link href="#achievements" className="text-bases lg:text-heads5 font-vergilia">Achievements</Link> */}
             
-          </div>
-        </div>
+    //       </div>
+    //     </div>
 
-        <div className="col-span-4 lg:col-span-3 
-                        bg-secondary p-1 mx-2
-                        rounded-3xl 
-                        flex align-middle items-center justify-center">
-          <div className="navbar 
-                          h-full w-full rounded-3xl px-10 
-                          bg-secondary text-neutral 
-                          border-primary border-solid border-2 
-                          flex justify-center align-center">
-            < Link href="#socials" className="text-bases lg:text-heads5 font-vergilia">
-              Contact me!
-            </Link>
-          </div>
-        </div>
-      </div>
+    //     <div className="col-span-4 lg:col-span-3 
+    //                     bg-secondary p-1
+    //                     rounded-3xl 
+    //                     flex align-middle items-center justify-center">
+    //       <div className="navbar 
+    //                       h-full w-full rounded-3xl px-10 
+    //                       bg-secondary text-neutral 
+    //                       border-primary border-solid border-2 
+    //                       flex justify-center align-center">
+    //         < Link href="#socials" className="text-captions lg:text-heads5 font-vergilia">
+    //           Contact me!
+    //         </Link>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </>
+    <>
+    
     </>
   );
 }

@@ -10,8 +10,8 @@ import { useGSAP } from "@gsap/react";
 
 function About() {
   const app = useRef();
-  const circle = useRef();
-  // gsap.registerPlugin(Flip);
+  // const circle = useRef();
+  // // gsap.registerPlugin(Flip);
   
   const [conditionalClass, setConditionalClass] = useState('lg:col-span-8 lg:row-span-2');
   const [conditionalClass2, setConditionalClass2] = useState('');
@@ -29,18 +29,18 @@ function About() {
     }
   }
 
-  useGSAP(() => {
-    // use selectors...
-    gsap.to(".box", { rotation: "+=360" });
+  // useGSAP(() => {
+  //   // use selectors...
+  //   gsap.to(".box", { rotation: "+=360" });
     
-    // or refs...
-    gsap.to(circle.current, { rotation: "-=360" });
+  //   // or refs...
+  //   gsap.to(circle.current, { rotation: "-=360" });
   
-  }, {scope: app}); 
+  // }, {scope: app}); 
 
 
   return (
-    <div ref={app} className={`px-4 lg:px-16 py-8 my-20 w-screen grid grid-cols-12 lg:grid-rows-6 gap-1`} onClick={toggleConditionalClass}>
+    <div ref={app} className={` px-4 lg:px-16 py-8 my-20 w-full grid grid-cols-12 lg:grid-rows-6 gap-1`} onClick={toggleConditionalClass}>
     
       <div className={`box col-span-12 order-1 h-full  lg:order-1 ${conditionalClass}`}> <IntroCard /> </div>
       <div className={`${conditionalClass2} col-span-12 order-9 h-full lg:col-span-4 lg:row-span-2 lg:order-2`}> <Logo /></div>

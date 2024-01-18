@@ -2,7 +2,7 @@ import React from "react";
 
 function Experience() {
   return (
-    <div className="mt-10 px-4 lg:px-16 min-h-screen w-screen">
+    <div className="mt-10 px-4 lg:px-16 min-h-screen w-full">
       <h1 className="text-heads3 lg:text-titles text-center font-bold font-vergilia "> Experience  </h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         

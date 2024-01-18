@@ -37,7 +37,7 @@ function Achievements() {
   ];
 
   return (
-    <div className="mt-10 px-4 lg:px-16 min-h-screen w-screen">
+    <div className="mt-10 p-4 lg:p-16 max-h-fit w-full">
       <h1 className="text-4xl font-bold mb-8">Achievements</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {achievements.map((achievement, index) => (

@@ -27,7 +27,7 @@ function Socials() {
   };
 
   return (
-    <div className="px-4 lg:px-16 py-8 my-20 w-screen h-auto">
+    <div className="px-4 lg:px-16 py-8 mt-20 w-full h-auto">
       <h1 className="text-heads3 lg:text-heads1 text-left font-bold font-vergilia mb-4">
         Socials
       </h1>
