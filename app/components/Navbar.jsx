@@ -5,46 +5,92 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    // <>
-    //   <div className="border-2 border-solid border-black grid grid-cols-12 mx-6 md:mx-16 lg:mx-20">
-    //     <div className="col-span-8 
-    //                   lg:col-span-7 lg:col-start-2 
-    //                   bg-secondary p-1 mr-2   
-    //                   rounded-3xl">
-    //       <div className="navbar 
-    //                     h-full w-full 
-    //                     rounded-3xl 
-    //                     bg-secondary 
-    //                     text-neutral 
-    //                     border-primary border-solid border-2 
-    //                     flex justify-around align-middle">
-    //         <Link href="#hero" className=" text-cations  lg:text-heads5 font-vergilia">Home</Link>
-    //         {/* <Link href="#projects" className="text-bases lg:text-heads5 font-vergilia">Projects</Link>
-    //         <Link href="#about" className="text-bases lg:text-heads5 font-vergilia">About</Link>
-    //         <Link href="#experience" className="text-bases lg:text-heads5 font-vergilia">Experience</Link>
-    //         <Link href="#achievements" className="text-bases lg:text-heads5 font-vergilia">Achievements</Link> */}
-            
-    //       </div>
-    //     </div>
-
-    //     <div className="col-span-4 lg:col-span-3 
-    //                     bg-secondary p-1
-    //                     rounded-3xl 
-    //                     flex align-middle items-center justify-center">
-    //       <div className="navbar 
-    //                       h-full w-full rounded-3xl px-10 
-    //                       bg-secondary text-neutral 
-    //                       border-primary border-solid border-2 
-    //                       flex justify-center align-center">
-    //         < Link href="#socials" className="text-captions lg:text-heads5 font-vergilia">
-    //           Contact me!
-    //         </Link>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </>
     <>
-    
+      <header class="bg-gray-800">
+        <nav class="container mx-auto px-6 py-3">
+          <div class="flex items-center justify-between">
+            <div class="text-white font-bold text-xl">
+              <a href="#">Meghana Rathanraj</a>
+            </div>
+            <div class="hidden md:block">
+              <ul class="flex items-center space-x-8">
+                <li>
+                  <a href="#" class="text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="md:hidden">
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-6 h-6 text-white"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mobile-menu hidden md:hidden">
+            <ul class="mt-4 space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     </>
   );
 }

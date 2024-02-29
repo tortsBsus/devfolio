@@ -10,7 +10,6 @@ const inter = Inter({ subsets: ['latin'] });
 export default function ProtectedLayout({ children }:{children:React.ReactNode}) {
   return (
     <>
-    <div className='sticky z-50 md:top-[85%] max-w-screen'>  <Navbar/> </div>  
         {children}
     </>
   );
