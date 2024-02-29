@@ -1,6 +1,16 @@
 module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+
+    container: {
+      center: true,
+      padding: '1.25rem',
+      screens: {
+        'xl': '1200px',
+        '2xl': '1200px',
+      },
+    },
+    
     extend: {
       fontFamily: {
         vergilia: ['Vergilia', 'sans-serif'],
