@@ -1,64 +1,72 @@
-import React from "react";
+import React, { useRef } from "react";
 import Logo from "./About/Logo";
 import Image from "next/image";
 import Link from "next/link";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function Navbar() {
+  const nav = useRef();
+  useGSAP(
+    () => {
+      const navbar = document.querySelector("#navbar");
+      gsap.fromTo(
+        navbar,
+        { y: "-100%" },
+        { y: "0", duration: 0.7, ease: "power4.out" }
+      );
+      
+    },
+    { scope: nav}
+  );
+
   return (
     <>
-      <header class="bg-gray-800">
-        <nav class="container mx-auto px-6 py-3">
-          <div class="flex items-center justify-between">
-            <div class="text-white font-bold text-xl">
+      <header ref={nav}
+        id="navbar"
+        className="border-[black] border-24 border-solid w-full bg-neutral text-[black]  "
+      >
+        <nav className=" mx-auto px-6 py-3">
+          <div className="flex items-center justify-between">
+            <div className="text-[black] font-bold text-xl">
               <a href="#">Meghana Rathanraj</a>
             </div>
-            <div class="hidden md:block">
-              <ul class="flex items-center space-x-8">
+            <div className="hidden md:block">
+              <ul className="flex items-center space-x-8">
                 <li>
-                  <a href="#" class="text-white">
+                  <a href="#" className="text-[black]">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="text-white">
+                  <a href="#" className="text-[black]">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="text-white">
+                  <a href="#" className="text-[black]">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="text-white">
+                  <a href="#" className="text-white">
                     Contact
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="md:hidden">
-              <button class="outline-none mobile-menu-button">
-                <svg
-                  class="w-6 h-6 text-white"
-                  x-show="!showMenu"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-              </button>
+            <div className="md:hidden">
+            <button className="outline-none mobile-menu-button ">
+            ≣ 
+</button>
             </div>
           </div>
-          <div class="mobile-menu hidden md:hidden">
-            <ul class="mt-4 space-y-4">
+          <div className="mobile-menu hidden md:hidden">
+            <ul className="mt-4 space-y-4">
               <li>
                 <a
                   href="#"
-                  class="block px-4 py-2 text-white bg-gray-900 rounded"
+                  className="block px-4 py-2 text-white bg-gray-900 rounded"
                 >
                   Home
                 </a>
@@ -66,7 +74,7 @@ function Navbar() {
               <li>
                 <a
                   href="#"
-                  class="block px-4 py-2 text-white bg-gray-900 rounded"
+                  className="block px-4 py-2 text-white bg-gray-900 rounded"
                 >
                   About
                 </a>
@@ -74,7 +82,7 @@ function Navbar() {
               <li>
                 <a
                   href="#"
-                  class="block px-4 py-2 text-white bg-gray-900 rounded"
+                  className="block px-4 py-2 text-white bg-gray-900 rounded"
                 >
                   Services
                 </a>
@@ -82,7 +90,7 @@ function Navbar() {
               <li>
                 <a
                   href="#"
-                  class="block px-4 py-2 text-white bg-gray-900 rounded"
+                  className="block px-4 py-2 text-white bg-gray-900 rounded"
                 >
                   Contact
                 </a>
