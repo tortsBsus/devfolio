@@ -35,10 +35,10 @@ function Navbar() {
               <ul className="flex items-center space-x-8">
                 <li>
                   <a href="#" className="text-[black]">
-                    Home
+                    Let's Talk!
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="text-[black]">
                     About
                   </a>
@@ -52,7 +52,7 @@ function Navbar() {
                   <a href="#" className="text-white">
                     Contact
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="md:hidden">

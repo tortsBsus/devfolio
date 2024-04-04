@@ -33,43 +33,43 @@ function About() {
     }
   }
 
-  useGSAP(() => {
-     let introInvisSection = document.querySelector("#introInvis");
-     let introVisSection = document.querySelector("#introVis");
-     let introCard = document.querySelector("#introCard");
+  // useGSAP(() => {
+  //    let introInvisSection = document.querySelector("#introInvis");
+  //    let introVisSection = document.querySelector("#introVis");
+  //    let introCard = document.querySelector("#introCard");
 
-    ScrollTrigger.create({
-      id:"introVis",
-      trigger:introVisSection,
-      start: 'center 33%',
-      end:"bottom top",
-      toggleActions: "play reverse restart reverse",
-      scrub:0.5,
-      markers:true,
-      onEnter: () => move(),
-      // onLeaveBack: () => toggleVideo("bye"),
-    });
+  //   ScrollTrigger.create({
+  //     id:"introVis",
+  //     trigger:introVisSection,
+  //     start: 'center 33%',
+  //     end:"bottom top",
+  //     toggleActions: "play reverse restart reverse",
+  //     scrub:0.5,
+  //     markers:true,
+  //     onEnter: () => move(),
+  //     // onLeaveBack: () => toggleVideo("bye"),
+  //   });
 
-    function move() {
-      console.log("moving")
+  //   function move() {
+  //     console.log("moving")
      
-    //  Flip.fit("#introVis","#introInvis");
-      let state = Flip.getState(introInvisSection);
-      console.log(introInvisSection);
-      console.log(introVisSection);
-      console.log(introCard);
-      introInvisSection.insertAdjacentElement('afterBegin', introCard);
-      console.log(introInvisSection);
-      Flip.from(state, {
+  //   //  Flip.fit("#introVis","#introInvis");
+  //     let state = Flip.getState(introInvisSection);
+  //     console.log(introInvisSection);
+  //     console.log(introVisSection);
+  //     console.log(introCard);
+  //     introInvisSection.insertAdjacentElement('afterBegin', introCard);
+  //     console.log(introInvisSection);
+  //     Flip.from(state, {
       
-        ease: "power3.out",
-        duration: 2
-      });
-    }
+  //       ease: "power3.out",
+  //       duration: 2
+  //     });
+  //   }
 
 
-        }
-  , {scope: aboutMe}); 
+  //       }
+  // , {scope: aboutMe}); 
 
 
   return (

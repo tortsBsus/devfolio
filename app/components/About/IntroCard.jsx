@@ -14,7 +14,7 @@ function IntroCard() {
 
     <div className="pl-4 lg:pl-10 col-span-3 flex flex-col justify-center">
       <h1 className="text-heads5 lg:text-heads4 font-vergilia">Hi! I'm Meghana Rathanraj!</h1>
-      <p className='text-bases lg:text-heads5 leading-tight'>A Full Stack Web Developer based in Bangalore India. I build web based solutions to problems in varied fields including Web3, Agritech and Surveillance</p>
+      <p className='text-bases lg:text-heads5 leading-tight'>A Full Stack Web Developer based in Bangalore India. I build web based solutions in varied fields including Web3, Agritech and Artificial Intelligence</p>
       <div className="divider divider-secondary" > Interesting Facts</div>
       <div className="flex flex-wrap">
         {/* --------------------------------------Modal 1---------------------------------------------------- */}
