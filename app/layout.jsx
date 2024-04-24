@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="peachy">
       <head>
-        <title>Meghana's Devfolio </title>
+        <title>Meghana Rathanraj's Devfolio </title>
         
       </head>
       <body className={sourceSerif4.className}>
