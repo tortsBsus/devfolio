@@ -1,17 +1,25 @@
 module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+   
 
     container: {
       center: true,
       padding: '1rem',
       screens: {
-        'xl': '1200px',
-        '2xl': '1200px',
+        
+        'md': '1400px',
+        'lg': '1400px',
+        'xl': '1400px',
+        '2xl': '1400px',
       },
     },
     
     extend: {
+     heroFontA : {  fontSize: "clamp(5rem, 3.8rem + 3.2vw, 7rem)"  },
+    heroFontB : { fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', 
+      padding:'20rem'
+     },
       fontFamily: {
         vergilia: ['Vergilia', 'sans-serif'],
       },
