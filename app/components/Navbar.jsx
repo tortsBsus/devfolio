@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Logo from "./About/Logo";
+// import Logo from "./About/Logo";
 import Image from "next/image";
 import Link from "next/link";
 import { useGSAP } from "@gsap/react";
@@ -12,37 +12,46 @@ function Navbar() {
       const navbar = document.querySelector("#navbar");
       gsap.fromTo(
         navbar,
-        { y: "-100%" },
-        { y: "0", duration: 0.7, ease: "power4.out" }
+        { opacity:"0%", y: "-20%" },
+        {opacity:"100%", y: "0", duration: 0.7, ease: "power4.out" },
+        
       );
-      
     },
-    { scope: nav}
+    { scope: nav }
   );
 
   return (
     <>
-      <header ref={nav}
+      <header
+        ref={nav}
         id="navbar"
-        className="border-[black] border-24 border-solid w-full bg-neutral text-[black]  "
+        className="border-[black] border-24 border-solid w-full mb-1 text-[black]  "
       >
         <nav className=" mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
             <div className="text-[black] font-bold text-xl">
-              <a href="#">Meghana Rathanraj</a>
+              <a href="#">Meghana</a>
             </div>
             <div className="hidden md:block">
               <ul className="flex items-center space-x-8">
+               
+                <li>
+                  <a href="#" className="text-[black]">
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-[black]">
+                    About
+                  </a>
+                </li>
+
                 <li>
                   <a href="#" className="text-[black]">
                     Let's Talk!
                   </a>
                 </li>
-                {/* <li>
-                  <a href="#" className="text-[black]">
-                    About
-                  </a>
-                </li>
+                {/* 
                 <li>
                   <a href="#" className="text-[black]">
                     Services
@@ -56,9 +65,7 @@ function Navbar() {
               </ul>
             </div>
             <div className="md:hidden">
-            <button className="outline-none mobile-menu-button ">
-            ≣ 
-</button>
+              <button className="outline-none mobile-menu-button ">≣</button>
             </div>
           </div>
           <div className="mobile-menu hidden md:hidden">

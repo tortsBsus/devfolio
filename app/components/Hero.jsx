@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import IntroCard from "./About/IntroCard";
+// import IntroCard from "./About/IntroCard";
 import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";

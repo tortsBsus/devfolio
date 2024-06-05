@@ -13,7 +13,7 @@ export default function Home() {
   const toggleSplash = () => setSplash(!splash);
 
   return (
-    <div className={`min-h-screen w-full bg-neutral`}>
+    <div className={`h-screen max-h-screen max-w-screen m-3 rounded-lg`}>
       <SplashScreen complete = {toggleSplash} />
       {
         !splash && 
