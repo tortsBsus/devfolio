@@ -6,105 +6,100 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 function Navbar() {
-  const nav = useRef();
-  useGSAP(
-    () => {
-      const navbar = document.querySelector("#navbar");
-      gsap.fromTo(
-        navbar,
-        { opacity:"0%", y: "-20%" },
-        {opacity:"100%", y: "0", duration: 0.7, ease: "power4.out" },
-        
-      );
-    },
-    { scope: nav }
-  );
+
+
+  const menuAnim = () => {
+    document.getElementById("navMobileMenu").classList.toggle("hidden");
+    const menuItems = document.querySelectorAll("#navMobileMenu li");
+    menuItems.forEach((item, index) => {
+      setTimeout(() => {
+        item.classList.toggle('opacity-0');
+        item.classList.toggle('-translate-y-4');
+      }, index * 100);
+    })
+  }
 
   return (
     <>
       <header
-        ref={nav}
         id="navbar"
-        className="border-[black] border-24 border-solid w-full mb-1 text-[black]  "
+        className="container top-0 left-0 w-full mb-1  text-[black] z-50 bg-neutral rounded-lg opacity-100 "
       >
-        <nav className=" mx-auto px-6 py-3">
+        
+         <nav className=" px-6 py-3 ">
           <div className="flex items-center justify-between">
             <div className="text-[black] font-bold text-xl">
-              <a href="#">Meghana</a>
+              <a href="#hero">Meghana Rathanraj</a>
             </div>
             <div className="hidden md:block">
               <ul className="flex items-center space-x-8">
-               
                 <li>
-                  <a href="#" className="text-[black]">
-                    Projects
+                  <a href="#Work" className="text-[black]">
+                    Work
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-[black]">
+                  <a href="#About" className="text-[black]">
                     About
                   </a>
                 </li>
-
                 <li>
-                  <a href="#" className="text-[black]">
+                  <a href="#Achievements" className="text-[black]">
+                    Achievements
+                  </a>
+                </li>
+                <li>
+                  <a href="#Socials" className="text-[black]">
                     Let's Talk!
                   </a>
                 </li>
-                {/* 
-                <li>
-                  <a href="#" className="text-[black]">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">
-                    Contact
-                  </a>
-                </li> */}
               </ul>
             </div>
             <div className="md:hidden">
-              <button className="outline-none mobile-menu-button ">≣</button>
+              <button className="outline-none mobile-menu-button " onClick={menuAnim}>≣</button>
             </div>
           </div>
-          <div className="mobile-menu hidden md:hidden">
+          <div id ="navMobileMenu" className="   hidden md:hidden  relative ">
             <ul className="mt-4 space-y-4">
-              <li>
+              <li className="opacity-0 transform -translate-y-4 transition-opacity transition-transform  duration-200 delay-[150]">
                 <a
-                  href="#"
-                  className="block px-4 py-2 text-white bg-gray-900 rounded"
+                  href="#Work"
+                  className=" block px-4 py-2 rounded"
                 >
-                  Home
+                  Work
                 </a>
+                <hr className="opacity-10"/>
               </li>
-              <li>
+              <li className="opacity-0 transform -translate-y-4 transition-opacity transition-transform duration-200 delay-[250]">
                 <a
-                  href="#"
-                  className="block px-4 py-2 text-white bg-gray-900 rounded"
+                  href="#About"
+                  className="block px-4 py-2 rounded"
                 >
                   About
                 </a>
+                <hr className="opacity-10"/>
               </li>
-              <li>
+              <li className="opacity-0 transform -translate-y-4 transition-opacity transition-transform duration-200 delay-400 ">
                 <a
-                  href="#"
-                  className="block px-4 py-2 text-white bg-gray-900 rounded"
+                  href="#Achievements"
+                  className="block px-4 py-2 rounded"
                 >
-                  Services
+                  Achievements
                 </a>
+                <hr className="opacity-10"/>
               </li>
-              <li>
+              <li className="opacity-0 transform -translate-y-4 transition-opacity transition-transform duration-200 delay-400">
                 <a
-                  href="#"
-                  className="block px-4 py-2 text-white bg-gray-900 rounded"
+                  href="#Socials"
+                  className="block px-4 py-2 rounded"
                 >
-                  Contact
+                  Let's Talk!
                 </a>
               </li>
             </ul>
           </div>
-        </nav>
+        </nav> 
+        <hr className="opacity-10"/>
       </header>
     </>
   );

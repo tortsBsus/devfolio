@@ -10,47 +10,7 @@ gsap.registerPlugin(TextPlugin);
 function Hero() {
   const [title, setTitle] = useState(20);
 
-  const heroSection = useRef();
-  useGSAP(
-    () => {
-      const hero = document.querySelector("#hero");
-      var heroTimeline = gsap.timeline();
-      heroTimeline.fromTo(
-        hero,
-        { opacity: "0%" },
-        {
-          opacity: "100%",
-          duration: 0.7,
-          ease: "power4.out",
-          // onComplete:   ()=> calculateFontSize()
-        }
-      );
-      
-    
-      heroTimeline.fromTo(
-        document.getElementsByClassName("sec2"),
-        { x: "-10%", opacity: "0%" },
-        { x: "0%", opacity: "100%", duration: 0.7, ease: "power4.out" }
-      );
-      heroTimeline.fromTo(
-        document.getElementById("sec3"),
-        { x: "-10%", opacity: "0%" },
-        { x: "0%", opacity: "100%", duration: 0.7, ease: "power4.out" }
-      );
-      heroTimeline.fromTo(
-        document.getElementById("sec1"),
-        { x: "-10%", opacity: "0%" },
-        { x: "0%", opacity: "100%", duration: 0.7, ease: "power4.out" }
-      );
-      heroTimeline.fromTo(
-        document.getElementById("heroCTA"),
-        { x: "-10%", opacity: "0%" },
-        { x: "0%", opacity: "100%", duration: 0.7, ease: "power4.out" }
-      );
-
-    },
-    { scope: heroSection }
-  );
+  
 
   const downloadPDF = () => {
     // URL of the PDF file
@@ -75,9 +35,9 @@ function Hero() {
 
   return (
     <div
-      ref={heroSection}
+      
       id="hero"
-      className=" text-primary h-[80vh] px-4 max-h-[90vh] w-full my-5  bg-neutral flex flex-col align-middle justify-center"
+      className="text-primary h-[85vh] md:h-[90vh] px-4 max-h-[95vh] w-full my-5 bg-neutral flex flex-col align-middle justify-center"
     >
       <div id="sec1" className="flex justify-start my-5">
         <div className="p-1 md:p-2 border-secondary/70 border-2 border-solid flex items-center justify-between rounded-lg text-center  ">
@@ -107,7 +67,7 @@ function Hero() {
       {/* <------------------------------- Mobile Version -------------------------------> */}
       <h1 
         style={{ fontSize: "clamp(1rem, 1rem + 3.5vh, 2.7rem)" }}
-        className="sec2 leading-tight text-primary font-vergilia font-bold tracking-wide sm:hidden  flex flex-wrap items-center break-words"
+        className="z-10 sec2 leading-tight text-primary font-vergilia font-bold tracking-wide sm:hidden  flex flex-wrap items-center break-words"
       >
         <p className="px-1">Versatile</p>
         

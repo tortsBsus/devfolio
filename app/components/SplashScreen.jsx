@@ -30,7 +30,7 @@ function SplashScreen(props) {
       tl.to(outer, {alignItems:"flex-start", justifyContent:"start", ease: "power4.in"        ,delay: 0.01})         
       tl.to(boxes, {height:"100%", width:"100%", backgroundColor:"#d6d3d6", ease: "power.in", delay: 0.01},"<")  
       tl.to(document.getElementById("animContainer"), {height:"100%", width:"100%", backgroundColor:"#d6d3d6", ease: "power.in", delay: 0.01},"<")      
-      tl.to(outer, {display:"none", ease: "power.in", delay: 0.01,  onComplete:   ()=> toggleSplash()})
+      tl.to(outer, {display:"none", ease: "power.in", delay: 0.01,  onComplete:() => toggleSplash()})
      
 
     },
@@ -42,19 +42,16 @@ function SplashScreen(props) {
       <div
         ref={splash}
         id="outer"
-        className="bg-primary text-3xl overflow-hidden rounded-lg h-full w-full flex items-center justify-center"
+        className="bg-primary text-3xl overflow-hidden rounded-lg h-[85vh]  w-full flex items-center justify-center mt-5"
       >
-        <div id="animContainer" className="      
-        w-2/3 h-2/3 relative
-        ">
+        <div id="animContainer" className="w-2/3 h-2/3 relative">
           {/* overlay */}
-          <div id="overlay" className=" rounded-lg absolute h-full w-0 z-4 text-primary text-[0.1rem]">  i  </div>
+          <div id="overlay" className="rounded-lg absolute h-full w-0 z-4 text-primary text-[0.1rem]">  i  </div>
           {/* content */}
           <div id="splashScreen" className=" h-full p-2 m-2 text-neutral flex items-center justify-center md:flex-row z-2 ">
             <div id="hi" className=" h-full flex md:flex-row items-center justify-center text-heads3 md:text-titles font-extrabold ">Portfolio</div>
             <div id="me" className=" hidden self-center">
              {" "}<b className="text-secondary rounded-lg text-bases md:text-heads5 " > 2024 </b> </div>
-           
           </div>
         </div>
       </div>
