@@ -95,7 +95,7 @@ function Hero() {
       >
         My Resume
       </div>
-      
+      <div id="heroArrow" className="text-center w-full font-extrabold self-end ">↓</div>
     </div>
   );
 }

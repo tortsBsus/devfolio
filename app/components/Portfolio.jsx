@@ -63,6 +63,13 @@ function Portfolio() {
         { x: "-10%", opacity: "0%" },
         { x: "0%", opacity: "100%", duration: 0.7, ease: "power4.out" }
       );
+      tl.fromTo(
+        document.getElementById("heroArrow"),
+        { y: "-100%", opacity: "0%" },
+        { y: "0%", opacity: "100%", duration: 2, ease: "power4.out", repeat:3 }
+      );
+
+     
     },
     { scope: site }
   );
