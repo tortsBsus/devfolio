@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="peachy">
+    <html lang="en" data-theme="peachy" className='scroll-smooth'>
       <head>
         <title>Meghana Rathanraj's Devfolio </title>        
       </head>
