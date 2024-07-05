@@ -3,6 +3,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRouter } from "next/navigation";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 

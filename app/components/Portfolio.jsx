@@ -11,7 +11,6 @@ import Projects from "../components/Projects/Projects";
 import Achievements from "../components/Achievements";
 import Socials from "../components/Socials";
 
-
 function Portfolio() {
   const site = useRef();
 
@@ -66,54 +65,62 @@ function Portfolio() {
       tl.fromTo(
         document.getElementById("heroArrow"),
         { y: "-100%", opacity: "0%" },
-        { y: "0%", opacity: "100%", duration: 2, ease: "power4.out", repeat:3 }
+        { y: "0%", opacity: "100%", duration: 2, ease: "power4.out", repeat: 3 }
       );
-
-     
     },
     { scope: site }
   );
 
   return (
-    <main ref={site}> 
-      <div        
+    <main ref={site}>
+      <div
         id="portfolio"
-        className="text-[black] bg-neutral w-full h-fit rounded-lg shadow-2xl  "
+        className="text-[black] bg-neutral w-full h-fit rounded-lg shadow-2xl pb-2  "
       >
         <div className="container relative">
           <Navbar />
           <Hero />
+          <div id="heroArrow" className="text-center w-full font-extrabold self-end">↓</div>
         </div>
       </div>
 
-      <div className="text-[black] bg-primary w-full h-fit rounded-lg ">
+      <div className="text-[black] bg-primary w-full h-fit rounded-lg mt-20">
         <div className="container ">
+          <h1
+            id="Work"
+            className="  font-vergilia text-center text-heads4 md:text-heads2 text-neutral tracking-tight leading-none "
+          >
+            My Work
+          </h1>
+        </div>
+      </div>
+
+      <div
+        id="Work"
+        className="text-[black] bg-neutral w-full h-fit rounded-lg shadow-2xl mt-20"
+      >
+        <div className="container pt-3">
           <FeaturedProject />
-        </div>
-      </div>
-
-      <div className="text-[black] bg-neutral w-full h-fit rounded-lg shadow-2xl">
-        <div className="container ">
           <Projects />
         </div>
       </div>
-      <div className="text-[black] bg-primary w-full h-fit rounded-lg ">
+      {/* <div className="text-[black] bg-primary w-full h-fit rounded-lg ">
         <div className="container ">
           <About />
         </div>
-      </div>
+      </div> */}
       <div className="text-[black] bg-neutral w-full h-fit rounded-lg shadow-2xl">
         <div className="container ">
-          <Achievements />
+          {/* <Achievements /> */}
           <Socials />
         </div>
-        <a href="#hero">          
+        <a href="#hero">
           <button className=" p-2 flex self-center items-center justify-center bottom-5 fixed right-5 w-[3rem] h-[3rem] font-extrabold rounded-full bg-secondary ">
             ↑
           </button>
         </a>
       </div>
-      </main>
+    </main>
   );
 }
 

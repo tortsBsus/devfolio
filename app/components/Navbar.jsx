@@ -38,7 +38,7 @@ function Navbar() {
                     Work
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#About" className="text-[black]">
                     About
                   </a>
@@ -47,7 +47,7 @@ function Navbar() {
                   <a href="#Achievements" className="text-[black]">
                     Achievements
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#Socials" className="text-[black]">
                     Let's Talk!
@@ -70,7 +70,7 @@ function Navbar() {
                 </a>
                 <hr className="opacity-10"/>
               </li>
-              <li className="opacity-0 transform -translate-y-4 transition-opacity transition-transform duration-200 delay-[250]">
+              {/* <li className="opacity-0 transform -translate-y-4 transition-opacity transition-transform duration-200 delay-[250]">
                 <a
                   href="#About"
                   className="block px-4 py-2 rounded"
@@ -87,8 +87,8 @@ function Navbar() {
                   Achievements
                 </a>
                 <hr className="opacity-10"/>
-              </li>
-              <li className="opacity-0 transform -translate-y-4 transition-opacity transition-transform duration-200 delay-400">
+              </li> */}
+              <li className="opacity-0 transform -translate-y-4 transition-opacity transition-transform duration-200 delay-[250]">
                 <a
                   href="#Socials"
                   className="block px-4 py-2 rounded"

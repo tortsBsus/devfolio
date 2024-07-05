@@ -34,26 +34,7 @@ function About() {
                   />
                 </div>
 
-                <div className="w-full md:w-2/3">
-                  
-                  <p className="mt-2">
-                    My journey so far has been marked by several notable
-                    achievements. I hold a patent for an innovative Neural Network
-                    Architecture designed for precision irrigation and have won
-                    the maker fair track at IEEE YESIST 12 for the same.
-                    Additionally, I received project grants from the Government of
-                    India to develop a pedestrian navigation system for smart
-                    cities.
-                  </p>
-                  <p className="mt-2">
-                    In my free time, I enjoy building fun side projects, exploring
-                    new crafts like Bullet Journalling, and collecting 4-hour long
-                    video essays on YouTube. I also love immersing myself in
-                    books, mostly fiction, like 'Life of Pi' and 'The House on the
-                    Cerulean Sea'. Currently reading my way through 'The
-                    hitchhiker's guide to the Galaxy'
-                  </p>
-                </div>
+                
               </div>
             </div>
             {/* ---------------------------------------------- Box 2 ---------------------------------------------- */}

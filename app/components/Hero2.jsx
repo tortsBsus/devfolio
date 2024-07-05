@@ -37,7 +37,7 @@ function Hero() {
     <div
       
       id="hero"
-      className="text-primary h-[85vh] md:h-[90vh] px-4 max-h-[95vh] w-full my-5 bg-neutral flex flex-col align-middle justify-center"
+      className="text-primary h-[85vh] md:h-[90vh] px-4 max-h-[95vh] w-full mt-5 bg-neutral flex flex-col align-middle justify-center"
     >
       <div id="sec1" className="flex justify-start my-5">
         <div className="p-1 md:p-2 border-secondary/70 border-2 border-solid flex items-center justify-between rounded-lg text-center  ">
@@ -95,7 +95,7 @@ function Hero() {
       >
         My Resume
       </div>
-      <div id="heroArrow" className="text-center w-full font-extrabold self-end ">↓</div>
+      
     </div>
   );
 }
